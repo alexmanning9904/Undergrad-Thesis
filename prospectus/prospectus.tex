@@ -1,0 +1,69 @@
+\documentclass{article}
+\author{
+    Alex Manning
+    \and
+    Ryan Meuth
+    \and
+    Kevin Burger
+}
+\title{Analysis of Circuit-Board-Level Radiation-Hardening Techniques for a Prompt-Dose Environment}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\pagebreak
+
+\section{Topic Overview}\label{Topic Overview}
+    The prompt-dose radiation environment provides a unique set of challenges for electronic design that can not always be solved using conventional rad-hardening (radiation hardening)
+    methods.  Prompt-dose refers to a radiation environment in which a high dose of radiation is delivered to a device over a very short period of time.  A pragmatic approach to rad-hardening a
+    device against prompt-dose radiation would be of particular interest to devices used in  defense applications with a requirement to continue functionality in the event of a nuclear detonation.  The prompt-dose environment 
+    threatens the functionality of electronics primarily due to gamma rays, high-energy neutron radiation, and the electromagnetic pulse (EMP) created due to reactions in Earth's upper atmosphere.
+    These effects can cause component degradation, especially in semiconductors, as well as transients that can temporarily or permanently damage circuit operation if left unhandled.\\
+
+    A pragmatic approach to prompt-dose rad-hard design should provide future designers a set of practical tools to design a circuit that is resistant to prompt-dose radiation effects.
+    This should include the following as necessary:
+    \begin{itemize}
+        \item An anlysis of the possible effects of prompt-dose radiation exposure on common electrical components based on previously published literature
+        \item Guidelines and recommendations for selecting appropriate components
+        \item Guidelines and recommendations for appropriate schematic design
+        \item Guidelines and recommendations for appropriate circuit-board layout
+        \item Guidelines and recommendations for Field-Programmable-Gate-Array (FPGA) design
+    \end{itemize}
+
+\section{Research Plan}
+    Research will begin with a thorough literature review of prompt-dose radiation effects on electronics based on existing literature.  Using the knowledge gained, a specification will be generated for a DC-DC converter
+    with at least the following features:
+    \begin{itemize}
+        \item Support for a wide range of input voltages
+        \item Multiple switchable output voltages
+        \item Appropriate onboard command and monitoring circuitry
+        \item An appropriate interface connect to an offboard monitor for circuit verification during test
+    \end{itemize}
+    The board will be manufactured, tested, analyzed, and iterated as resources permit.  The project will culminate in a report as described in section \ref{Topic Overview}.
+
+\section{Meetings}
+    Meetings will occur upon request of any party as required to ensure successful completion of this project.  A status update will be delivered at least every two weeks in the form of an email to
+    all committee members.  Participation in Ryan Meuth's Honors Thesis Organizational Canvas Course will be completed as required.
+
+\section{Timeline}
+    \begin{tabular}{|c|c|}
+        \hline
+        \textbf{Date} & \textbf{Due} \\\hline
+        09/27/2020 & Literature Review \\\hline
+        10/04/2020 & Board Specification \\\hline
+        11/01/2020 & Board Design/Fabrication Files $\cdot$ Test Procedure \\\hline
+        11/15/2020 & Completed Board Units $\cdot$ Radiation Test Scheduled \\\hline
+        11/22/2020 & Board Functional Test Results \\\hline
+        12/13/2020 & Board Radiation Test Results \\\hline
+        01/10/2021 & Test Result Analysis \\\hline
+        01/17/2021 & Updated Board Specification \\\hline
+        01/31/2021 & Updated Board Design/Fabrication Files $\cdot$ Updated Test Procedure  \\\hline
+        02/14/2021 & Completed Updated Board Units $\cdot$ Radiation Test Scheduled \\\hline
+        02/28/2021 & Board Functional Test Results \\\hline
+        03/14/2021 & Board Radiation Test Results \\\hline
+        03/21/2021 & Report Completed \\\hline
+        04/02/2021 & Defense Completed \\\hline
+        04/16/2021 & Thesis Submitted \\\hline
+    \end{tabular}
+
+\end{document}
